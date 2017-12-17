@@ -43,14 +43,18 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'enableStrictParsing' => false,
             'rules' => [
+                [
+                    'pattern' => 'site/say/<message>',
+                    'route' => 'site/say',
+                    'defaults' => ['message' => 'Hello'],
+                ],
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
