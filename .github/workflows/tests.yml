@@ -25,5 +25,6 @@ jobs:
           coverage: none
       - run: composer validate --no-check-publish
       - run: composer install --no-interaction --prefer-dist --no-scripts
+      - run: composer check-platform-reqs
       - run: composer audit --locked --abandoned=report
       - run: php vendor/bin/codecept run unit,functional --no-colors
