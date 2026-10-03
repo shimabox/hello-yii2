@@ -16,6 +16,7 @@ return [
     'components' => [
         'db' => $db,
         'mailer' => [
+            'messageClass' => 'yii\\swiftmailer\\Message',
             'useFileTransport' => true,
         ],
         'assetManager' => [            

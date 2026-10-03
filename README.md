@@ -4,7 +4,8 @@ HelloWorld on yii2
 
 ## Requirements
 
-- PHP 7.4 or later (PHP 8.3 recommended)
+- Runtime: PHP 7.4 or later; install production dependencies with `composer install --no-dev`
+- Development and tests: PHP 8.1 or later (PHP 8.3 recommended)
 - PHP extensions: mbstring, ctype, GD with FreeType support (CAPTCHA)
 - Composer 2
 
