@@ -40,6 +40,6 @@ class ContactFormTest extends \Codeception\Test\Unit
         expect($emailMessage->getTo())->hasKey('admin@example.com');
         expect($emailMessage->getFrom())->hasKey('tester@example.com');
         expect($emailMessage->getSubject())->equals('very important letter subject');
-        expect($emailMessage->toString())->contains('body of current message');
+        $this->assertStringContainsString('body of current message', $emailMessage->toString());
     }
 }
